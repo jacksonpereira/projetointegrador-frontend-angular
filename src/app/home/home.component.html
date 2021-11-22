@@ -1,0 +1,22 @@
+<div class="container item-ong">
+    <h3><b>O que é o Divulga ONG?</b></h3>
+    <p>O projeto nasceu com a intenção de divulgar e potencializar a captação de recursos de ONGs e Projetos que melhoram a vida da sociedade em sua volta. Temos que lembrar que as ONGs possuem diversas naturezas e trabalhos e, para continuarem desempenhando esse serviço, necessitam de ajuda financeira. Visando isso, o Divulga ONG veio para reunir as ONGs com seus dados e incentivar a contribuição por parte da sociedade.</p>
+</div>
+<div class="container item-ong">
+    <h3><b>Como contribuir com uma ONG?</b></h3>
+    <p>Cada ONG cadastrada no Divulga ONG possui dados para contato com a própria organização. Basta pesquisar pela ONG, localizar os dados e entrar em contato com os responsáveis. Cada ONG possui opções diferentes para contribuir com a iniciativa. <b><i>Contribua!</i></b></p>
+</div>
+<div class="container item-ong">
+    <h3><b>Como posso cadastrar a minha ONG?</b></h3>
+    <p>Basta clicar em Cadastrar ONG, preencher os dados e salvar. Após isto, sua ONG ou Projeto estará disponível para no sistema para ser consultado pelos usuários do sistema. Confie em nós, essa ferramenta pode ajudar o seu projeto a melhorar vidas!</p>
+</div>
+<div class="container item-ong">
+    <h3><b>Últimas ONGs cadatradas:</b></h3>            
+    <div class="row card item-ong" aria-hidden="true" *ngFor="let ong of ongs">
+        <h5 class="card-title">{{ong.nome}}</h5>
+        <p class="card-text item-text"><b>CNPJ:</b> {{ong.cnpj}}</p>
+        <p class="card-text item-text"><b>Endereço:</b> {{ong.endereco}}, {{ong.numero}} - <b>Bairro:</b> {{ong.bairro}} - <b>Cidade:</b> {{ong.cidade}} - {{ong.estado}}</p>
+        <p class="card-text item-text"><b>CEP:</b> {{ong.cep}} - <b>País:</b> {{ong.pais}}</p>
+        <p class="card-text item-text"><b>Telefone:</b> {{ong.telefone}} - <b>Email:</b> {{ong.email}} - <b>Site:</b> {{ong.site}}</p>
+    </div>
+</div>

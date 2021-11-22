@@ -1,0 +1,25 @@
+<h3><b>Pesquisar ONGs:</b></h3>
+<form class="row item-ong">
+    <div class="mb-3 col-lg-4">
+        <input type="text" placeholder="Nome" class="form-control" ng-model="nome">
+    </div>
+    <div class="mb-3 col-lg-4">
+        <input type="text" placeholder="Cidade" class="form-control" ng-model="cidade">
+    </div>
+    <div class="mb-3 col-lg-4">
+        <button type="submit" type="submit" class="btn btn-primary col-lg-12" ng-click="search()">Pesquisar</button>
+    </div>
+</form>
+<div class="alert alert-warning row" role="alert" ng-show="statusbusca.vazio">
+    Nenhuma ONG encontrada!
+</div>
+<div class="row alert alert-danger" role="alert" ng-show="statusbusca.erro">
+    Erro ao buscar ONGs! Tente novamente mais tarde.
+</div>
+<div class="row card item-ong" aria-hidden="true" *ngFor="let ong of ongs">
+    <h5 class="card-title">{{ong.nome}}</h5>
+    <p class="card-text item-text"><b>CNPJ:</b> {{ong.cnpj}}</p>
+    <p class="card-text item-text"><b>Endereço:</b> {{ong.endereco}}, {{ong.numero}} - <b>Bairro:</b> {{ong.bairro}} - <b>Cidade:</b> {{ong.cidade}} - {{ong.estado}}</p>
+    <p class="card-text item-text"><b>CEP:</b> {{ong.cep}} - <b>País:</b> {{ong.pais}}</p>
+    <p class="card-text item-text"><b>Telefone:</b> {{ong.telefone}} - <b>Email:</b> {{ong.email}} - <b>Site:</b> {{ong.site}}</p>
+</div>
