@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "deploy:ghdocs": "ng build --prod --output-path docs --base-href /projetointegrador-frontend-angular/",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
