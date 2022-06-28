@@ -11,8 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy:ghdocs": "ng build --prod --output-path docs --base-href /projetointegrador-frontend-angular/",
-    "heroku-postbuild": "ng build --prod",
-    "gzip": "rm -rf ./dist/*-gzip && gzipper --verbose --output-file-format [filename].[ext] ./dist/projetointegrador-frontend-angular ./dist/projetointegrador-frontend-angular"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
