@@ -13,7 +13,7 @@ nav div{
     height: 150px;
 }
 .header{
-    background-color: #00ADB5;
+    background-color: #3FC1C9;
     border-radius: 0.25cm 0.25cm 0cm 0cm;
 }
 ul li a{
@@ -21,4 +21,5 @@ ul li a{
 }
 ul li a:hover{
     font-weight: bold;
+    font-size: 14pt;
 }
