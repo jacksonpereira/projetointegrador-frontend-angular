@@ -1,18 +1,9 @@
-.logo{
-    padding: 10px;
-    margin: 10px;
-}
 .item-ong{
     padding: 10px;
     margin: 10px;
 }
 .item-text{
     margin: 2px
-}
-.item-text-colored{
-    margin: 2px;
-    background-color: #36506C;
-    border-radius: 4px;
 }
 b{
     color: #36506C;
@@ -21,11 +12,6 @@ b{
 h5{
     color: #36506C;
     text-transform: uppercase;
-}
-.item-text-white{
-    margin: 2px;
-    background-color: white;
-    border-radius: 4px;
 }
 b{
     color: #36506C;
