@@ -11,15 +11,15 @@
 }
 .item-text-colored{
     margin: 2px;
-    background-color: #80D0D4;
+    background-color: #36506C;
     border-radius: 4px;
 }
 b{
-    color: #00ADB5;
+    color: #36506C;
     text-transform: uppercase;
 }
 h5{
-    color: #00ADB5;
+    color: #36506C;
     text-transform: uppercase;
 }
 .item-text-white{
@@ -28,17 +28,17 @@ h5{
     border-radius: 4px;
 }
 b{
-    color: #00ADB5;
+    color: #36506C;
     text-transform: uppercase;
 }
 h5{
-    color: #00ADB5;
+    color: #36506C;
     text-transform: uppercase;
 }
 input[type=text]{
     text-transform: uppercase;
     border-radius: 4px;
-    border: 2px solid #00ADB5;
+    border: 2px solid #36506C;
 }
 button{
     background-color: #00ADB5;

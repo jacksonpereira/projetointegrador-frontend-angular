@@ -10,7 +10,7 @@
     margin: 2px
 }
 label{
-    color: #00ADB5;
+    color: #36506C;
     text-transform: uppercase;
 }
 .item-text-white{
@@ -19,20 +19,20 @@ label{
     border-radius: 4px;
 }
 b{
-    color: #00ADB5;
+    color: #36506C;
     text-transform: uppercase;
 }
 h5{
-    color: #00ADB5;
+    color: #36506C;
     text-transform: uppercase;
 }
 input{
     border-radius: 4px;
-    border: 2px solid #00ADB5;
+    border: 2px solid #36506C;
 }
 textarea{
     border-radius: 4px;
-    border: 2px solid #00ADB5;
+    border: 2px solid #36506C;
 }
 .botao{
     background-color: #00ADB5;
@@ -40,12 +40,12 @@ textarea{
     border: 2px solid #00ADB5;
 }
 .botao-limpar{
-    border: 2px solid #00ADB5;
+    border: 2px solid #36506C;
 }
 .botao:hover{
     background-color: #80D0D4;
     text-transform: uppercase;
-    border: 2px solid #80D0D4;
+    border: 2px solid #36506C;
 }
 .botao:active{
     background-color: #005c61;
