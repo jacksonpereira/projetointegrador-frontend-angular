@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "node server.js",
     "dev": "ng serve",
-    "build": "ng build && gzipper compress ./src",
+    "build": "ng build && tar -zcvf archive.tar.gz dist/projetointegrador-frontend-angular/*",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
