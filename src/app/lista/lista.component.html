@@ -1,27 +1,62 @@
-<h3><b>Pesquisar ONGs:</b></h3>
+<h3><b>Pesquisar Instituições:</b></h3>
 <form class="row item-ong" [formGroup]="form">
-    <div class="mb-3 col-lg-4">
-        <input type="text" placeholder="Nome" class="form-control" formControlName="nome">
-    </div>
-    <div class="mb-3 col-lg-4">
-        <input type="text" placeholder="Cidade" class="form-control" formControlName="cidade">
-    </div>
-    <div class="mb-3 col-lg-4">
-        <button type="submit" type="submit" class="btn btn-primary col-lg-12"  (click)="onSubmit()">Pesquisar</button>
-    </div>
+  <div class="mb-3 col-lg-4">
+    <input
+      type="text"
+      placeholder="Nome"
+      class="form-control"
+      formControlName="nome"
+    />
+  </div>
+  <div class="mb-3 col-lg-4">
+    <input
+      type="text"
+      placeholder="Cidade"
+      class="form-control"
+      formControlName="cidade"
+    />
+  </div>
+  <div class="mb-3 col-lg-4">
+    <button
+      type="submit"
+      type="submit"
+      class="btn btn-primary col-lg-12"
+      (click)="onSubmit()"
+    >
+      Pesquisar
+    </button>
+  </div>
 </form>
 <div class="alert alert-warning row" role="alert" [hidden]="vazio">
-    Nenhuma ONG encontrada!
+  Nenhuma instituição encontrada!
 </div>
 <div class="row alert alert-danger" role="alert" [hidden]="erro">
-    Erro ao buscar ONGs! Tente novamente mais tarde.
+  Erro ao buscar instituições! Tente novamente mais tarde.
 </div>
-<h3><b>Últimas ONGs cadatradas:</b></h3> 
+<h3><b>Últimas instituições cadatradas:</b></h3>
 <div class="row card item-ong" aria-hidden="true" *ngFor="let ong of ongs">
-    <h5 class="card-title">{{ong.nome}}</h5>
-    <p class="card-text item-text"><b>CNPJ:</b> {{ong.cnpj}}</p>
-    <p class="card-text item-text"><b>Endereço:</b> {{ong.endereco}}, {{ong.numero}} - <b>Bairro:</b> {{ong.bairro}} - <b>Cidade:</b> {{ong.cidade}} - {{ong.estado}}</p>
-    <p class="card-text item-text"><b>CEP:</b> {{ong.cep}} - <b>País:</b> {{ong.pais}}</p>
-    <p class="card-text item-text"><b>Telefone:</b> {{ong.telefone}} - <b>Email:</b> {{ong.email}} - <b>Site:</b> {{ong.site}}</p>
-    <p class="card-text item-text"><b>Descrição dos trabalhos e projetos da ONG:</b> {{ong.descricao}}</p>
+  <h5 class="card-title item-text">{{ ong.nome }}</h5>
+  <p class="card-text item-text"><b>CNPJ:</b> {{ ong.cnpj }}</p>
+  <p class="card-text item-text">
+    <b>Endereço:</b> {{ ong.endereco }}, {{ ong.numero }} - <b>Bairro:</b>
+    {{ ong.bairro }} - <b>Cidade:</b> {{ ong.cidade }} - {{ ong.estado }}
+  </p>
+  <p class="card-text item-text">
+    <b>CEP:</b> {{ ong.cep }} - <b>País:</b> {{ ong.pais }}
+  </p>
+  <p class="card-text item-text">
+    <b>Telefone:</b> {{ ong.contato.telefone }} - <b>Email: </b>
+    <a href="mailto:{{ ong.contato.email }}">{{ ong.contato.email }}</a> -
+    <b>Site: </b>
+    <a href="{{ ong.contato.site }}">{{ ong.contato.site }}</a>
+  </p>
+  <p class="card-text item-text">
+    <b>Agência:</b> {{ ong.dadosBancarios.agencia }} - <b>Conta:</b>
+    {{ ong.dadosBancarios.conta }} - <b>Tipo de chave PIX:</b>
+    {{ ong.dadosBancarios.tipo_pix }} - <b>Chave PIX:</b>
+    {{ ong.dadosBancarios.chave_pix }}
+  </p>
+  <p class="card-text item-text">
+    <b>Descrição dos trabalhos e projetos da ONG:</b> {{ ong.descricao }}
+  </p>
 </div>

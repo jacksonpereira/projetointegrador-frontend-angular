@@ -1,3 +1,6 @@
+import { Contato } from "./contato";
+import { DadosBancarios } from './dadosBancarios';
+
 export class Ong {
 
     id?: number;
@@ -9,11 +12,13 @@ export class Ong {
     cidade?: string;
     estado?: string;
     pais?: string;
-    telefone?: string;
-    email?: string;
-    site?: string;
+    contato: Contato;
     cnpj?: string;
+    dadosBancarios: DadosBancarios;
     descricao?: string;
 
-    constructor(){}
+    constructor(){
+        this.contato = new Contato();
+        this.dadosBancarios = new DadosBancarios;
+    }
 }

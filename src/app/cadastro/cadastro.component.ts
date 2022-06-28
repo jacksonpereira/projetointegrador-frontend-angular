@@ -15,22 +15,6 @@ export class CadastroComponent implements OnInit {
   incompleto: any
 
   ong: Ong;
-  
-  form: FormGroup = new FormGroup({
-    nome: new FormControl(''),
-    cnpj: new FormControl(''),
-    telefone: new FormControl(''),
-    email: new FormControl(''),
-    site: new FormControl(''),
-    endereco: new FormControl(''),
-    numero: new FormControl(''),
-    cep: new FormControl(''),
-    bairro: new FormControl(''),
-    cidade: new FormControl(''),
-    estado: new FormControl(''),
-    pais: new FormControl(''),
-    descricao: new FormControl(''),
-  });
 
   constructor(private formBuilder: FormBuilder, private ongService: OngService) {
     this.ong = new Ong();
@@ -43,11 +27,10 @@ export class CadastroComponent implements OnInit {
   }
   
   onSubmit(){
-    this.ong = JSON.parse(JSON.stringify(this.form.value));
+    this.ong = JSON.parse(JSON.stringify(this.ong));
     this.ongService.saveOng(this.ong).subscribe((ong: Ong) => {
       this.ong = ong;
       this.sucesso = false;
-      console.log(this.ong.nome);
     });
   }
 }

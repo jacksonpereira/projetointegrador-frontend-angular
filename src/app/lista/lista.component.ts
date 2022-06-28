@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Ong } from '../ong';
 import { OngService } from '../ong.service';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Contato } from '../contato';
 
 @Component({
   selector: 'app-lista',

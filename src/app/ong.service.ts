@@ -8,7 +8,7 @@ import { Ong } from './ong';
 })
 export class OngService {
 
-  url = 'https://projetointegrador1-api.herokuapp.com/';
+  url = 'http://localhost:4201/';
 
   ongs = [] as any;
   constructor(private httpClient: HttpClient) { }
