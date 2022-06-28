@@ -17,5 +17,8 @@ nav div{
     border-radius: 0.25cm 0.25cm 0cm 0cm;
 }
 ul li a{
-    color: white;
+    color: black;
+}
+ul li a:hover{
+    font-weight: bold;
 }
