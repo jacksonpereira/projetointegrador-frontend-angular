@@ -1,13 +1,13 @@
 @media screen and (min-width: 541px) {
     .logo{
-        padding: 2px;
+        padding: 20px 2px 2px 2px;
         margin: 2px;
         width: 250px;
         /* height: 103.28px; */
         position: static;
     }
     .logo-univesp{
-        padding: 2px;
+        padding: 20px 2px 2px 2px;
         margin: 2px;
         width: 200px;
         /* height: 105.64px; */
@@ -29,16 +29,19 @@
         font-weight: bold;
         font-size: 14pt;
     }
+    .links{
+        padding: 20px 2px 2px 2px;
+    }
 }
 
 @media screen and (max-width: 540px) {
     .logo{
-        padding: 2px;
+        padding: 20px 2px 2px 2px;
         margin: 2px;
         width: 250px;
     }
     .logo-univesp{
-        padding: 2px;
+        padding: 20px 2px 2px 2px;
         margin: 2px;
         width: 120px;
     }
