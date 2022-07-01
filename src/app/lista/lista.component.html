@@ -1,5 +1,5 @@
-<h3><b>Pesquisar Instituições:</b></h3>
 <form class="row item-ong" [formGroup]="form">
+  <h3 class="container"><b>Pesquisar Instituições:</b></h3>
   <div class="mb-3 col-lg-4">
     <input
       type="text"
@@ -33,7 +33,7 @@
 <div class="row alert alert-danger" role="alert" [hidden]="erro">
   Erro ao buscar instituições! Tente novamente mais tarde.
 </div>
-<h3><b>Últimas instituições cadatradas:</b></h3>
+<h3 class="container"><b>Últimas instituições cadatradas:</b></h3>
 <div class="row card item-ong" aria-hidden="true" *ngFor="let ong of ongs">
   <h5 class="card-title item-text">{{ ong.nome }}</h5>
   <p class="card-text item-text"><b>CNPJ:</b> {{ ong.cnpj }}</p>
